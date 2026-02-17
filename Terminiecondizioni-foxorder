@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termini di Servizio — FoxOrder</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f3ff;
+      color: #1e1e2e;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #5B21B6, #7C3AED);
+      color: white;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+
+    header .app-name {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 15px;
+      opacity: 0.75;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+
+    .intro-box {
+      background: white;
+      border-left: 5px solid #7C3AED;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: #444;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #5B21B6;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #EDE9FE;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .num {
+      background: #7C3AED;
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #7C3AED;
+      margin: 20px 0 8px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #374151;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin: 10px 0 16px 8px;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #374151;
+      padding: 5px 0 5px 24px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      color: #7C3AED;
+      font-weight: bold;
+      position: absolute;
+      left: 6px;
+    }
+
+    .warning-box {
+      background: #FEF3C7;
+      border-left: 4px solid #F59E0B;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #92400E;
+    }
+
+    .info-box {
+      background: #EDE9FE;
+      border-left: 4px solid #7C3AED;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #4C1D95;
+    }
+
+    .disclaimer-box {
+      background: #FFF1F2;
+      border-left: 4px solid #F43F5E;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #881337;
+    }
+
+    .success-box {
+      background: #F0FDF4;
+      border-left: 4px solid #22C55E;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #14532D;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    table th {
+      background: #7C3AED;
+      color: white;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #EDE9FE;
+      color: #374151;
+      vertical-align: top;
+    }
+
+    table tr:nth-child(even) td {
+      background: #F5F3FF;
+    }
+
+    a {
+      color: #7C3AED;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: #9CA3AF;
+    }
+
+    footer strong { color: #7C3AED; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 26px; }
+      section { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">FoxOrder</div>
+  <h1>Termini di Servizio</h1>
+  <p>Aggiornati al 17 febbraio 2026 &mdash; Leggere attentamente prima di utilizzare il servizio</p>
+</header>
+
+<div class="container">
+
+  <div class="intro-box">
+    I presenti Termini di Servizio ("Termini") regolano l'utilizzo dell'applicazione <strong>FoxOrder</strong>, sviluppata e gestita da <strong>Sapori Di Mare di Paolo Di Panfilo</strong> (P.IVA 01958870675), con sede a Notaresco (TE), Abruzzo, Italia. Utilizzando FoxOrder, l'utente dichiara di aver letto, compreso e accettato integralmente i presenti Termini.
+  </div>
+
+  <!-- 1. ACCETTAZIONE -->
+  <section>
+    <h2><span class="num">1</span> Accettazione dei Termini</h2>
+    <p>L'accesso e l'utilizzo di FoxOrder implica l'accettazione integrale dei presenti Termini di Servizio e della <a href="https://pricavyfoxorder.padiapps.com">Informativa sulla Privacy</a>. Se non si accettano i presenti Termini, è necessario cessare immediatamente l'utilizzo dell'applicazione.</p>
+    <p>Sapori Di Mare di Paolo Di Panfilo si riserva il diritto di aggiornare i presenti Termini in qualsiasi momento. Le modifiche verranno comunicate tramite notifica nell'app o via email con un preavviso di almeno <strong>30 giorni</strong>. L'utilizzo continuato dell'applicazione dopo tale periodo costituisce accettazione delle modifiche.</p>
+  </section>
+
+  <!-- 2. DESTINATARI -->
+  <section>
+    <h2><span class="num">2</span> Destinatari del Servizio</h2>
+    <p>FoxOrder è un'applicazione gestionale destinata <strong>esclusivamente a operatori commerciali</strong> in possesso di Partita IVA, quali ristoranti, pizzerie, bar, trattorie e attività di ristorazione in generale.</p>
+    <div class="disclaimer-box">
+      <strong>Accesso vietato a:</strong> privati consumatori, soggetti privi di Partita IVA e persone di età inferiore ai 18 anni. Registrandosi, l'utente dichiara di essere maggiorenne e di operare in qualità di operatore commerciale con regolare Partita IVA.
+    </div>
+    <p>Sapori Di Mare di Paolo Di Panfilo si riserva il diritto di sospendere o cancellare account che non rispettino tali requisiti.</p>
+  </section>
+
+  <!-- 3. DESCRIZIONE DEL SERVIZIO -->
+  <section>
+    <h2><span class="num">3</span> Descrizione del Servizio</h2>
+    <p>FoxOrder è un'applicazione gestionale per ristoranti che offre le seguenti funzionalità:</p>
+    <ul>
+      <li>Gestione ordini ai tavoli, asporto e prenotazioni</li>
+      <li>Gestione sale, tavoli, menu con ingredienti e allergeni</li>
+      <li>Gestione dipendenti e accessi</li>
+      <li>Stampa comande e conti tramite stampanti termiche</li>
+      <li>Menu digitale online con QR Code</li>
+      <li>Statistiche e reportistica</li>
+      <li>Sincronizzazione in tempo reale tra più dispositivi</li>
+    </ul>
+    <p>Il servizio è erogato tramite infrastruttura cloud <strong>Supabase</strong> e richiede una connessione internet per il corretto funzionamento.</p>
+  </section>
+
+  <!-- 4. ACCOUNT -->
+  <section>
+    <h2><span class="num">4</span> Account e Accessi</h2>
+
+    <h3>4.1 Struttura dell'account</h3>
+    <p>Ogni abbonamento comprende:</p>
+    <ul>
+      <li><strong>1 account principale</strong> (titolare del ristorante) con pieno accesso a tutte le funzionalità</li>
+      <li><strong>Dipendenti illimitati</strong>, ciascuno con la propria email e credenziali, con i permessi assegnati dal titolare</li>
+    </ul>
+    <div class="info-box">
+      L'account è associato a un singolo ristorante. Per gestire più ristoranti è necessario un abbonamento separato per ciascuno.
+    </div>
+
+    <h3>4.2 Responsabilità delle credenziali</h3>
+    <p>L'utente è il solo responsabile della custodia delle proprie credenziali di accesso (email e password). Sapori Di Mare di Paolo Di Panfilo non è responsabile per accessi non autorizzati derivanti da negligenza nella custodia delle credenziali.</p>
+    <p>In caso di smarrimento o furto delle credenziali, l'utente deve contattare immediatamente <a href="mailto:assistenza@padiapps.com">assistenza@padiapps.com</a>.</p>
+  </section>
+
+  <!-- 5. PIANI E PAGAMENTI -->
+  <section>
+    <h2><span class="num">5</span> Piani di Abbonamento e Pagamenti</h2>
+
+    <h3>5.1 Piani disponibili</h3>
+    <table>
+      <tr>
+        <th>Piano</th>
+        <th>Durata</th>
+        <th>Prezzo</th>
+        <th>Caratteristiche principali</th>
+      </tr>
+      <tr>
+        <td><strong>Periodo Gratuito</strong></td>
+        <td>7 giorni o 300 stampe</td>
+        <td>Gratuito</td>
+        <td>Accesso completo a tutte le funzionalità, limite stampe</td>
+      </tr>
+      <tr>
+        <td><strong>Professional Mensile</strong></td>
+        <td>Mensile</td>
+        <td>€25,00 IVA inclusa</td>
+        <td>1 sala, 30 tavoli, funzionalità base</td>
+      </tr>
+      <tr>
+        <td><strong>Professional Annuale</strong></td>
+        <td>Annuale</td>
+        <td>€170,00 IVA inclusa</td>
+        <td>1 sala, 30 tavoli, funzionalità base</td>
+      </tr>
+      <tr>
+        <td><strong>Max Mensile</strong></td>
+        <td>Mensile</td>
+        <td>€35,00 IVA inclusa</td>
+        <td>Sale e tavoli illimitati, statistiche, funzionalità complete</td>
+      </tr>
+      <tr>
+        <td><strong>Max Annuale</strong></td>
+        <td>Annuale</td>
+        <td>€249,00 IVA inclusa</td>
+        <td>Sale e tavoli illimitati, statistiche, funzionalità complete</td>
+      </tr>
+    </table>
+
+    <h3>5.2 Gestione pagamenti</h3>
+    <p>Gli abbonamenti a FoxOrder sono acquistati e gestiti tramite <strong>Google Play Store</strong>. Acquistando un abbonamento, l'utente accetta i Termini di Servizio di Google Play Store, che regolano:</p>
+    <ul>
+      <li>La modalità di pagamento e fatturazione</li>
+      <li>Il rinnovo automatico degli abbonamenti</li>
+      <li>La gestione dei rimborsi</li>
+    </ul>
+    <div class="info-box">
+      Sapori Di Mare di Paolo Di Panfilo non gestisce direttamente i pagamenti né i rimborsi. Per qualsiasi richiesta di rimborso, l'utente deve rivolgersi a Google Play Store secondo le relative politiche.
+    </div>
+
+    <h3>5.3 Periodo Gratuito</h3>
+    <p>Il Periodo Gratuito termina automaticamente al raggiungimento del primo dei seguenti limiti:</p>
+    <ul>
+      <li>Scadenza dei <strong>7 giorni</strong> dall'attivazione</li>
+      <li>Raggiungimento delle <strong>300 stampe</strong></li>
+    </ul>
+    <p>Al termine del Periodo Gratuito, per continuare a utilizzare FoxOrder è necessario sottoscrivere uno dei piani a pagamento disponibili.</p>
+
+    <h3>5.4 Rinnovo e disdetta</h3>
+    <p>Gli abbonamenti si rinnovano automaticamente tramite Google Play Store. L'utente può disdire il rinnovo automatico in qualsiasi momento direttamente dalle impostazioni di Google Play Store. L'accesso al servizio rimane attivo fino alla naturale scadenza del periodo già pagato.</p>
+  </section>
+
+  <!-- 6. OBBLIGHI DEL RISTORATORE -->
+  <section>
+    <h2><span class="num">6</span> Obblighi del Ristoratore</h2>
+    <p>Utilizzando FoxOrder, il ristoratore si impegna a:</p>
+
+    <h3>6.1 Correttezza dei dati</h3>
+    <ul>
+      <li>Inserire dati accurati, aggiornati e veritieri</li>
+      <li>Mantenere aggiornate le informazioni del proprio ristorante (nome, indirizzo, telefono)</li>
+      <li>Gestire correttamente i dati dei propri dipendenti</li>
+    </ul>
+
+    <h3>6.2 Allergeni</h3>
+    <div class="warning-box">
+      Il ristoratore è l'unico responsabile della corretta compilazione e aggiornamento delle informazioni sugli allergeni nel menu digitale, in conformità al Regolamento UE n. 1169/2011. FoxOrder mette a disposizione lo strumento tecnico, ma <strong>Sapori Di Mare di Paolo Di Panfilo non è in alcun modo responsabile per omissioni, errori o mancata indicazione degli allergeni</strong> da parte del ristoratore.
+    </div>
+
+    <h3>6.3 Dati dei clienti finali</h3>
+    <p>Il ristoratore che inserisce nell'app dati personali dei propri clienti (es. nome e telefono nelle prenotazioni) è l'unico responsabile del trattamento di tali dati. Il ristoratore si impegna a:</p>
+    <ul>
+      <li>Informare i propri clienti del trattamento dei loro dati personali</li>
+      <li>Trattare tali dati in conformità al GDPR e alla normativa vigente</li>
+      <li>Non inserire dati di clienti senza il loro consenso ove richiesto</li>
+    </ul>
+
+    <h3>6.4 Uso corretto dell'applicazione</h3>
+    <ul>
+      <li>Non utilizzare l'app per finalità illecite o non conformi alla sua destinazione</li>
+      <li>Non tentare di violare la sicurezza del sistema</li>
+      <li>Non condividere le proprie credenziali con soggetti esterni al ristorante</li>
+      <li>Non tentare di copiare, decompilare o reverse-engineering dell'applicazione</li>
+    </ul>
+  </section>
+
+  <!-- 7. LIMITAZIONI DI RESPONSABILITÀ -->
+  <section>
+    <h2><span class="num">7</span> Limitazioni di Responsabilità</h2>
+
+    <h3>7.1 Interruzione del servizio</h3>
+    <div class="disclaimer-box">
+      Sapori Di Mare di Paolo Di Panfilo non garantisce la continuità del servizio e non è responsabile per interruzioni, rallentamenti o malfunzionamenti derivanti da disservizi dell'infrastruttura <strong>Supabase</strong>, della connessione internet dell'utente o di altri fattori tecnici al di fuori del proprio controllo.
+    </div>
+
+    <h3>7.2 Perdita di dati</h3>
+    <div class="disclaimer-box">
+      Sapori Di Mare di Paolo Di Panfilo non è responsabile per la perdita di dati causata da malfunzionamenti tecnici, disservizi di Supabase o altri eventi non imputabili alla propria condotta. Si consiglia agli utenti di conservare copie di sicurezza dei dati rilevanti.
+    </div>
+
+    <h3>7.3 Allergeni e menu online</h3>
+    <div class="disclaimer-box">
+      Sapori Di Mare di Paolo Di Panfilo non è responsabile per danni, sanzioni o conseguenze legali derivanti dalla mancata, errata o incompleta indicazione degli allergeni da parte del ristoratore nel menu digitale.
+    </div>
+
+    <h3>7.4 Uso improprio</h3>
+    <div class="disclaimer-box">
+      Sapori Di Mare di Paolo Di Panfilo non è responsabile per danni diretti o indiretti derivanti da un utilizzo dell'applicazione non conforme ai presenti Termini o alle finalità per cui è stata sviluppata.
+    </div>
+  </section>
+
+  <!-- 8. CANCELLAZIONE E SOSPENSIONE -->
+  <section>
+    <h2><span class="num">8</span> Cancellazione e Sospensione dell'Account</h2>
+
+    <h3>8.1 Cancellazione su richiesta dell'utente</h3>
+    <p>L'utente può richiedere la cancellazione del proprio account e la rimozione di tutti i dati associati inviando una richiesta scritta a <a href="mailto:assistenza@padiapps.com">assistenza@padiapps.com</a>. La cancellazione verrà effettuata entro 30 giorni dalla ricezione della richiesta.</p>
+    <div class="info-box">
+      La disdetta dell'abbonamento tramite Google Play Store non comporta automaticamente la cancellazione dei dati. Per richiedere la rimozione dei dati è necessario contattare esplicitamente <strong>assistenza@padiapps.com</strong>.
+    </div>
+
+    <h3>8.2 Sospensione da parte di Sapori Di Mare</h3>
+    <p>Sapori Di Mare di Paolo Di Panfilo si riserva il diritto di sospendere o cancellare l'account in caso di:</p>
+    <ul>
+      <li>Mancato pagamento dell'abbonamento</li>
+      <li>Violazione dei presenti Termini di Servizio</li>
+      <li>Utilizzo fraudolento o illecito dell'applicazione</li>
+      <li>Fornitura di dati falsi in fase di registrazione</li>
+      <li>Mancato possesso dei requisiti (Partita IVA, maggiore età)</li>
+    </ul>
+  </section>
+
+  <!-- 9. PROPRIETÀ INTELLETTUALE -->
+  <section>
+    <h2><span class="num">9</span> Proprietà Intellettuale</h2>
+    <p>L'applicazione FoxOrder, il suo codice sorgente, il design, i loghi, i grafici e tutti i contenuti correlati sono di esclusiva proprietà di <strong>Sapori Di Mare di Paolo Di Panfilo</strong> e sono protetti dalle leggi italiane ed europee sul diritto d'autore e sulla proprietà intellettuale.</p>
+    <p>È espressamente vietato:</p>
+    <ul>
+      <li>Copiare, riprodurre o distribuire l'applicazione o parti di essa</li>
+      <li>Effettuare reverse engineering o decompilazione del codice</li>
+      <li>Creare prodotti derivati basati su FoxOrder</li>
+      <li>Utilizzare il nome, il logo o il brand FoxOrder senza autorizzazione scritta</li>
+    </ul>
+  </section>
+
+  <!-- 10. LEGGE APPLICABILE -->
+  <section>
+    <h2><span class="num">10</span> Legge Applicabile e Foro Competente</h2>
+    <p>I presenti Termini di Servizio sono regolati dalla <strong>legge italiana</strong> e dal diritto dell'Unione Europea applicabile. Per qualsiasi controversia derivante dall'interpretazione, applicazione o esecuzione dei presenti Termini, è competente in via esclusiva il <strong>Tribunale di Teramo</strong>.</p>
+  </section>
+
+  <!-- 11. CONTATTI -->
+  <section>
+    <h2><span class="num">11</span> Contatti</h2>
+    <p>Per qualsiasi domanda, segnalazione o richiesta relativa ai presenti Termini di Servizio:</p>
+    <ul>
+      <li><strong>Email supporto tecnico:</strong> <a href="mailto:support@padiapps.com">support@padiapps.com</a></li>
+      <li><strong>Email assistenza e dati:</strong> <a href="mailto:assistenza@padiapps.com">assistenza@padiapps.com</a></li>
+      <li><strong>Titolare:</strong> Sapori Di Mare di Paolo Di Panfilo</li>
+      <li><strong>P.IVA:</strong> 01958870675</li>
+      <li><strong>Sede:</strong> Notaresco (TE), Abruzzo, Italia</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 <strong>Sapori Di Mare di Paolo Di Panfilo</strong> — Tutti i diritti riservati</p>
+  <p style="margin-top:6px;">FoxOrder è un prodotto di Sapori Di Mare di Paolo Di Panfilo &mdash; Notaresco (TE), Italia</p>
+</footer>
+
+</body>
+</html>
